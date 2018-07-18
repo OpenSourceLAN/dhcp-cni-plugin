@@ -1,6 +1,6 @@
 # DHCP CNI Plugin container
 
-This repo is the source for the opensourcelan/dhcp-cni-plugin docker image.
+This repo is the source for the [opensourcelan/dhcp-cni-plugin docker image](https://hub.docker.com/r/opensourcelan/dhcp-cni-plugin/).
 
 ### How to use
 
