@@ -20,7 +20,7 @@ Step 1: Build the `dhcp` binary.
 ```
 GOPATH=~/go go get github.com/containernetworking/plugins/plugins/ipam/dhcp
 cd ~/go/src/github.com/containernetworking/plugins/plugins/ipam/dhcp
-GOPATH=~/go CGO_ENABLED=1 go build
+GOPATH=~/go CGO_ENABLED=0 go build
 ```
 
 Step 2: Put the `dhcp` binary in to this folder

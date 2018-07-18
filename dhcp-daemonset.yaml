@@ -32,6 +32,8 @@ metadata:
     tier: node
     app: dhcp
 spec:
+  updateStrategy:
+    type: RollingUpdate
   template:
     metadata:
       labels:
@@ -68,9 +70,9 @@ spec:
           mountPath: /cfg
       containers:
       - name: kube-dhcp
-        # This can be any image with /bin/sh, rm, and the CGO_ENABLED=1 compiled
+        # This can be any image with /bin/sh, rm, and the CGO_ENABLED=0 compiled
         # dhcp daemon at /dhcp. Busybox is a perfectly fine base tiny image.
-        image: opensourcelan/dhcp-cni-plugin:20180718-192813
+        image: opensourcelan/dhcp-cni-plugin:20180718-194152
         command:
         - /bin/sh
         args:
